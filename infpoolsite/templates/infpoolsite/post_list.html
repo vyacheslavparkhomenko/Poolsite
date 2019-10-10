@@ -11,6 +11,9 @@
 		<div name = "contact phone">+38(095)8550867</div>
 	</header>
 	<main>
+		{% for post in posts %}
+			<img src="{{ post.picture.url }}">
+		{% endfor %}
 		<article id = "service">
 			Мы представляем ряд услуг:
 			<ul>
