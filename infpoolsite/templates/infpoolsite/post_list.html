@@ -1,18 +1,22 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="{% static 'css/infpoolsite.css' %}">
     <title>Pool</title>
 </head>
 <body>
 	<header>
-		<div name = "header name">Ремонт бассейнов</div>
-		<div name = "contact phone">+38(095)8550867</div>
+		<h1 class = "header_inf" >Ремонт бассейнов</h1>
+		<div class = "header_inf">+38(095)8550867</div>
 	</header>
 	<main>
 		{% for post in posts %}
-			<img src="{{ post.picture.url }}">
+			<img class = "img_pool" src="{{ post.picture.url }}" style="width: 40%">
 		{% endfor %}
 		<article id = "service">
 			Мы представляем ряд услуг :

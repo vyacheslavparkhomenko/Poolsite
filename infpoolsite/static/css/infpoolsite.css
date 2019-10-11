@@ -1,0 +1,20 @@
+.header_inf{
+	display: inline-block;
+}
+
+.imp_pool {
+	display: inline-block;
+	border: 1px solid blue;
+}
+
+h1.header_inf {
+	text-align: left;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 36pt;
+}
+
+div.header_inf {
+	text-align: right;
+	margin-right: auto;
+}
